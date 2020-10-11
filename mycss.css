@@ -76,7 +76,7 @@ position: absolute;
 .title-slide {
   background-color: #FFFFFF;
   border-top: 80px solid #FFFFFF;
-  background-image: url("pix/POMA_sticker.png");
+  background-image: url("pix/logo.png");
   background-position: 90% 1%; 
   background-size: 20%;
 }

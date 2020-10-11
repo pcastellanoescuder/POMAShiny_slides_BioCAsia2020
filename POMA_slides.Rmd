@@ -1,8 +1,8 @@
 ---
-title: "POMA"
-subtitle: "Statistical analysis tool for targeted metabolomic data"
+title: "POMAShiny"
+subtitle: "An User-friendly Web-based Workflow for Statistical Analysis of Mass Spectrometry Data"
 author: "Pol Castellano-Escuder"
-date: "Jul 11, 2019 | useR! 2019 | Toulouse"
+date: "Oct 15, 2020 | BioC Asia 2020"
 output:
   xaringan::moon_reader:
     css: ["mycss.css"]
@@ -30,7 +30,7 @@ output:
 .pull-right[
 
 .center[
-<img src="pix/POMA_sticker.png" width="250">
+<img src="pix/logo.png" width="250">
 ]
 
 ]
@@ -62,9 +62,7 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 ---
 
-# The data
-
-## Targeted and untargeted metabolomics
+# Targeted and Untargeted Metabolomics
 
 .center[
 
@@ -268,33 +266,11 @@ class: inverse, center, middle
 
 ---
 
-# Future Work
-
-(In order of importance...)
-
-  - Finishing the **documentation** as accurately as possible
-    
-  - Make the code more **efficient**
-
-  - Develop a **package** with all POMA functions
-
-.center[
-
-<img src="pix/meme.jpg" width="400">
-
-]
-
----
-
 class: inverse, center, middle
 
 # Thank you all!
 
 To the [Statistics and Bioinformatics Research Group](https://sites.google.com/view/estbioinfo/home) and [Biomarkers and Nutritional & Food Metabolomics Research Group](http://www.nutrimetabolomics.com/) from [University of Barcelona](https://www.ub.edu/web/ub/en/index.html?) for amazing support
-
-To the [useR! 2019](http://www.user2019.fr/) organizers, for allowing me to show this work
-
-Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
 
 <html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 
@@ -303,11 +279,4 @@ Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
 <a href="http://twitter.com/polcastellano_"><i class="fab fa-twitter"></i>&nbsp; @polcastellano_</a><br>
 <a href="https://github.com/pcastellanoescuder"><i class="fab fa-github"></i>&nbsp; @pcastellanoescuder</a><br>
 <a href="https://www.ub.edu/web/ub/en/index.html?"><i class="fas fa-map-marker-alt"></i>&nbsp; University of Barcelona</a>
-
-```{r, warning = FALSE, comment = NA, message = FALSE, echo = FALSE, eval = FALSE}
-# HTML to PDF
-library(webshot)
-file_name <- paste0("file://", normalizePath("poma_slides_useR2019.html"))
-webshot(file_name, "poma_slides_useR2019.pdf")
-```
 
