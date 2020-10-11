@@ -20,10 +20,9 @@ output:
 .pull-left[
 
 ### 1. Context
-### 2. Motivation & Aims
+### 2. Aims
 ### 3. Results
 ### 4. Conclusions
-### 5. Future Work
 
 ]
 
@@ -59,24 +58,6 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 [2] Narad P., Kirthanashri S.V. (2018) Introduction to Omics. In: Arivaradarajan P., Misra G. (eds) Omics Approaches, Technologies And Applications. Springer, Singapore
 ]
-
----
-
-# Targeted and Untargeted Metabolomics
-
-.center[
-
-<img src="pix/spectrum.png" width="300">
-
-]
-
-  - **Targeted metabolomics:** we know the mass of the metabolites that we want to quantify BEFORE the analysis (hundreds)
-
-  - **Untargeted metabolomics:** all metabolites will be acquired, but we will not know exactly which ones are some of them (thousands)
-
-## How is the data that we will analize?
-
-  - Standard (Omics) matrix: Samples in rows and metabolites (variables) in columns
   
 ---
 
@@ -87,30 +68,34 @@ _"Metabolomics is the identification and quantification of the small molecule me
 ```{r, warning = FALSE, comment = NA, message = FALSE, echo = FALSE, dpi = 200}
 library(ggplot2)
 tools <- readxl::read_excel("tools.xlsx")
-#png("pix/tools.png", res = 200, units = "cm", width = 20, height = 20)
-ggplot(tools, aes(`Tool class`, ..count..)) +
-  geom_bar(aes(fill = `Software type`), position = "dodge") +
+ggplot(tools, aes(class, ..count..)) +
+  geom_bar(aes(fill = type), position = "dodge") +
   xlab("") +
-  ylab("Counts") +
-  theme_minimal() +
-  theme(
-    legend.title=element_text(size=14),
-    legend.text=element_text(size=13),
-    axis.text=element_text(size=14),
-    axis.title=element_text(size=14))
-#dev.off()
+  ylab("Number of tools") +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.text = element_text(size = 18),
+        axis.text = element_text(size = 16),
+        axis.title = element_text(size = 20),
+        legend.position = "top")
 ```
 
 ]
 
 .pull-right[
 
-### Web Apps that allows users to perform a statistical analysis<sup>3</sup>
+#### Web app tools that include statistical analysis options<sup>3</sup>
 
-  - Workflow4metabolomics 
+  - Workflow4Metabolomics 
   - Galaxy-M
-  - XCMS Online 
+  - XCMS 
   - MetaboAnalyst
+
+#### Drawbacks
+
+  - Covariates
+  - Few statistical methods available
+  - Interoperability and reproducibility
 ]
 
 .footnote[
@@ -119,42 +104,46 @@ ggplot(tools, aes(`Tool class`, ..count..)) +
 
 ]
 
+???
+
+- Why focused in web apps?
+- Drawbacks (covariates and experimental designs)
+- Interoperability and Reproducibility -> POMA
+
 ---
 
 class: inverse, center, middle
 <html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 
-# MOTIVATION & AIMS
+# AIMS
 
 ---
 
-# Motivation & Aims
+#  Aims
 
-## Motivation
+.font110[
+  - Provide users of an <span style="color:#f38620">**user-friendly**</span> and <span style="color:#f38620">**intuitive**</span> tool
+  ]
 
-  - Biological interpretation of the results is one of the hard points and high knowledge of statistical analysis and computational programming is usually required
+.font110[
+  - Allow users to include <span style="color:#f38620">**covariates**</span> in the analysis     
+  ]
   
-  - Sometimes, the existing tools don’t accept "complicated" databases
-
-## Aims
-
-  - Provide users of an <span style="color:#f38620">**EASY USE**</span> tool that don’t require programming skills
+.font110[
+  - Provide users <span style="color:#f38620">**alternative statistical methodologies**</span> for mass spectrometry data analysis    
+  ]
   
-  - Allow users to analyze all types of data (simple and complex)
+.font110[
+  - Provide a fully <span style="color:#f38620">**reproducible**</span> and <span style="color:#f38620">**transparent**</span> tool      
   
-  - Lead the user for a good statistical analysis (Documentation & automatic reports) 
+      - Open Source     
+      - R package
+    ]
+    
+.font110[
+  - **Create a web app tool <span style="color:#f38620">not to be a substitute</span> of powerful and robust tools that already exist, but an <span style="color:#f38620">user-friendly and intuitive alternative</span> that addresses some of the issues not covered by the other tools**
+  ]
   
-  - Make a completely <span style="color:#f38620">**REPRODUCIBLE**</span> analysis (Open Source)
-  
-  - **Our main aim is <span style="color:#f38620">COMPLETING</span> the existing tools and give other option to users, <span style="color:#f38620">NOT</span> to <span style="color:#f38620">COMPETE</span> with the existing tools**
-
-
-???
-
-Because we want
-Because programming is cool
-Black box
-
 ---
 
 class: inverse, center, middle
@@ -164,11 +153,11 @@ class: inverse, center, middle
 
 ---
 
-# POMA Shiny App
+# POMAShiny App
 
 ![](pix/landscape.png)
 
-_http://polcastellano.shinyapps.io/POMA/_
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
 
 ---
 
@@ -233,14 +222,6 @@ The aim is to offer to tune as many parameters as possible to avoid the "black b
 
 ---
 
-# Automatic Statistical Report
-
-.center[
-<img src="pix/automatic.png" width="650">
-]
-
----
-
 class: inverse, center, middle
 <html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 
@@ -270,7 +251,7 @@ class: inverse, center, middle
 
 # Thank you all!
 
-To the [Statistics and Bioinformatics Research Group](https://sites.google.com/view/estbioinfo/home) and [Biomarkers and Nutritional & Food Metabolomics Research Group](http://www.nutrimetabolomics.com/) from [University of Barcelona](https://www.ub.edu/web/ub/en/index.html?) for amazing support
+[Statistics and Bioinformatics Research Group](https://sites.google.com/view/estbioinfo/home) and [Biomarkers and Nutritional & Food Metabolomics Research Group](http://www.nutrimetabolomics.com/) from [University of Barcelona](https://www.ub.edu/web/ub/en/index.html?)
 
 <html><div style='float:left'></div><hr color='#f38620' size=1px width=720px></html> 
 

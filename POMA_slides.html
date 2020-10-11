@@ -29,10 +29,9 @@ class: center, middle, inverse, title-slide
 .pull-left[
 
 ### 1. Context
-### 2. Motivation &amp; Aims
+### 2. Aims
 ### 3. Results
 ### 4. Conclusions
-### 5. Future Work
 
 ]
 
@@ -68,24 +67,6 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 [2] Narad P., Kirthanashri S.V. (2018) Introduction to Omics. In: Arivaradarajan P., Misra G. (eds) Omics Approaches, Technologies And Applications. Springer, Singapore
 ]
-
----
-
-# Targeted and Untargeted Metabolomics
-
-.center[
-
-&lt;img src="pix/spectrum.png" width="300"&gt;
-
-]
-
-  - **Targeted metabolomics:** we know the mass of the metabolites that we want to quantify BEFORE the analysis (hundreds)
-
-  - **Untargeted metabolomics:** all metabolites will be acquired, but we will not know exactly which ones are some of them (thousands)
-
-## How is the data that we will analize?
-
-  - Standard (Omics) matrix: Samples in rows and metabolites (variables) in columns
   
 ---
 
@@ -99,12 +80,18 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 .pull-right[
 
-### Web Apps that allows users to perform a statistical analysis&lt;sup&gt;3&lt;/sup&gt;
+#### Web app tools that include statistical analysis options&lt;sup&gt;3&lt;/sup&gt;
 
-  - Workflow4metabolomics 
+  - Workflow4Metabolomics 
   - Galaxy-M
-  - XCMS Online 
+  - XCMS 
   - MetaboAnalyst
+
+#### Drawbacks
+
+  - Covariates
+  - Few statistical methods available
+  - Interoperability and reproducibility
 ]
 
 .footnote[
@@ -113,42 +100,46 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 ]
 
+???
+
+- Why focused in web apps?
+- Drawbacks (covariates and experimental designs)
+- Interoperability and Reproducibility -&gt; POMA
+
 ---
 
 class: inverse, center, middle
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#f38620' size=1px width=720px&gt;&lt;/html&gt; 
 
-# MOTIVATION &amp; AIMS
+# AIMS
 
 ---
 
-# Motivation &amp; Aims
+#  Aims
 
-## Motivation
+.font110[
+  - Provide users of an &lt;span style="color:#f38620"&gt;**user-friendly**&lt;/span&gt; and &lt;span style="color:#f38620"&gt;**intuitive**&lt;/span&gt; tool
+  ]
 
-  - Biological interpretation of the results is one of the hard points and high knowledge of statistical analysis and computational programming is usually required
+.font110[
+  - Allow users to include &lt;span style="color:#f38620"&gt;**covariates**&lt;/span&gt; in the analysis     
+  ]
   
-  - Sometimes, the existing tools don’t accept "complicated" databases
-
-## Aims
-
-  - Provide users of an &lt;span style="color:#f38620"&gt;**EASY USE**&lt;/span&gt; tool that don’t require programming skills
+.font110[
+  - Provide users &lt;span style="color:#f38620"&gt;**alternative statistical methodologies**&lt;/span&gt; for mass spectrometry data analysis    
+  ]
   
-  - Allow users to analyze all types of data (simple and complex)
+.font110[
+  - Provide a fully &lt;span style="color:#f38620"&gt;**reproducible**&lt;/span&gt; and &lt;span style="color:#f38620"&gt;**transparent**&lt;/span&gt; tool      
   
-  - Lead the user for a good statistical analysis (Documentation &amp; automatic reports) 
+      - Open Source     
+      - R package
+    ]
+    
+.font110[
+  - **Create a web app tool &lt;span style="color:#f38620"&gt;not to be a substitute&lt;/span&gt; of powerful and robust tools that already exist, but an &lt;span style="color:#f38620"&gt;user-friendly and intuitive alternative&lt;/span&gt; that addresses some of the issues not covered by the other tools**
+  ]
   
-  - Make a completely &lt;span style="color:#f38620"&gt;**REPRODUCIBLE**&lt;/span&gt; analysis (Open Source)
-  
-  - **Our main aim is &lt;span style="color:#f38620"&gt;COMPLETING&lt;/span&gt; the existing tools and give other option to users, &lt;span style="color:#f38620"&gt;NOT&lt;/span&gt; to &lt;span style="color:#f38620"&gt;COMPETE&lt;/span&gt; with the existing tools**
-
-
-???
-
-Because we want
-Because programming is cool
-Black box
-
 ---
 
 class: inverse, center, middle
@@ -158,11 +149,11 @@ class: inverse, center, middle
 
 ---
 
-# POMA Shiny App
+# POMAShiny App
 
 ![](pix/landscape.png)
 
-_http://polcastellano.shinyapps.io/POMA/_
+&lt;a href="https://github.com/pcastellanoescuder/POMAShiny"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&amp;nbsp; https://github.com/pcastellanoescuder/POMAShiny&lt;/a&gt;&lt;br&gt;
 
 ---
 
@@ -227,14 +218,6 @@ The aim is to offer to tune as many parameters as possible to avoid the "black b
 
 ---
 
-# Automatic Statistical Report
-
-.center[
-&lt;img src="pix/automatic.png" width="650"&gt;
-]
-
----
-
 class: inverse, center, middle
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#f38620' size=1px width=720px&gt;&lt;/html&gt; 
 
@@ -260,33 +243,11 @@ class: inverse, center, middle
 
 ---
 
-# Future Work
-
-(In order of importance...)
-
-  - Finishing the **documentation** as accurately as possible
-    
-  - Make the code more **efficient**
-
-  - Develop a **package** with all POMA functions
-
-.center[
-
-&lt;img src="pix/meme.jpg" width="400"&gt;
-
-]
-
----
-
 class: inverse, center, middle
 
 # Thank you all!
 
-To the [Statistics and Bioinformatics Research Group](https://sites.google.com/view/estbioinfo/home) and [Biomarkers and Nutritional &amp; Food Metabolomics Research Group](http://www.nutrimetabolomics.com/) from [University of Barcelona](https://www.ub.edu/web/ub/en/index.html?) for amazing support
-
-To the [useR! 2019](http://www.user2019.fr/) organizers, for allowing me to show this work
-
-Slides created via the R package [xaringan](https://github.com/yihui/xaringan)
+[Statistics and Bioinformatics Research Group](https://sites.google.com/view/estbioinfo/home) and [Biomarkers and Nutritional &amp; Food Metabolomics Research Group](http://www.nutrimetabolomics.com/) from [University of Barcelona](https://www.ub.edu/web/ub/en/index.html?)
 
 &lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#f38620' size=1px width=720px&gt;&lt;/html&gt; 
 
