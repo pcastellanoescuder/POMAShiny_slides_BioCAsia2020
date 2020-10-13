@@ -104,12 +104,6 @@ ggplot(tools, aes(class, ..count..)) +
 
 ]
 
-???
-
-- Why focused in web apps?
-- Drawbacks (covariates and experimental designs)
-- Interoperability and Reproducibility -> POMA
-
 ---
 
 class: inverse, center, middle
@@ -161,64 +155,80 @@ class: inverse, center, middle
 
 ---
 
+# POMAShiny Workflow
+
+.center[
+<img src="pix/graphical_abstract.png" width="700">
+]
+
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
+
+---
+
 # Architecture
 
 ![](pix/architecture.png)
 
 ---
 
-# Input Data Panel
-
-We have used the `shinydashboard` package for the main structure and the `dashboardthemes` package for customization
+# Upload Data Panel
 
 ![](pix/upload_data.png)
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
+
 ---
 
-# Input Data Panel
-
-We have used the `shinydashboard` package for the main structure and the `dashboardthemes` package for customization
+# Upload Data Panel
 
 ![](pix/upload_data2.png)
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
+
 ---
 
-# Visualization
-
-All plots in the app are designed using `plotly` package. It make all plots interactive allowing users to zoom in or zoom out in a plots, select points to see the individual information, hide all points of one group and download plots in a easy way!
-
-.pull-left[
+# Interactive Visualization
 
 ![](pix/boxplots.png)
-]
-
-.pull-right[
 
 ![](pix/pca.png)
-
-]
-
 ---
 
-# Documentation
-
-The implementation of `shinyhelper` package allows each panel to have an individual help  
+# Help & Documentation
 
 ![](pix/normalization.png)
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
 
 ---
 
-# Documentation
-
-The implementation of `shinyhelper` package allows each panel to have an individual help  
+# Help & Documentation
 
 ![](pix/help.png)
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
 
 ---
 
 # Statistical Analysis
 
-The aim is to offer to tune as many parameters as possible to avoid the "black box" effect
-
 ![](pix/univariate.png)
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
+
+---
+
+# Prediction Models in POMAShiny
+
+  - Test set
+  - External validation
+  - Real prediction metrics
+  
+![](pix/prediction.png)
+<a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
+
+---
+
+# POMA Package
+
+## `POMA` package will become part of Bioconductor version 3.12 on October 28th, 2020 `r emo::ji("tada")` 
+
+<a href="https://github.com/pcastellanoescuder/POMA"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMA</a><br>
 
 ---
 
