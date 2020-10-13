@@ -19,7 +19,7 @@ class: center, middle, inverse, title-slide
 # POMAShiny
 ## An User-friendly Web-based Workflow for Statistical Analysis of Mass Spectrometry Data
 ### Pol Castellano-Escuder
-### Oct 15, 2020 | BioC Asia 2020
+### Oct 15, 2020 | BioC Asia 2020 (<code>#BioCAsia2020</code>)
 
 ---
 
@@ -89,8 +89,8 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 #### Drawbacks
 
-  - Covariates
   - Few statistical methods available
+  - Covariates
   - Interoperability and reproducibility
 ]
 
@@ -133,11 +133,11 @@ class: inverse, center, middle
   - Provide a fully &lt;span style="color:#f38620"&gt;**reproducible**&lt;/span&gt; and &lt;span style="color:#f38620"&gt;**transparent**&lt;/span&gt; tool      
   
       - Open Source     
-      - R package
+      - R/**&lt;span style="color:#f38620"&gt;Bioconductor&lt;/span&gt;** package
     ]
     
 .font110[
-  - **Create a web app tool &lt;span style="color:#f38620"&gt;not to be a substitute&lt;/span&gt; of powerful and robust tools that already exist, but an &lt;span style="color:#f38620"&gt;user-friendly and intuitive alternative&lt;/span&gt; that addresses some of the issues not covered by the other tools**
+  - **Create a web app tool &lt;span style="color:#f38620"&gt;not to substitute&lt;/span&gt; powerful and robust tools that already exist but an &lt;span style="color:#f38620"&gt;user-friendly and intuitive alternative&lt;/span&gt; that addresses some of the issues not covered by the other tools**
   ]
   
 ---
@@ -167,14 +167,14 @@ class: inverse, center, middle
 
 We have used the `shinydashboard` package for the main structure and the `dashboardthemes` package for customization
 
-![](pix/example_data.png)
+![](pix/upload_data.png)
 ---
 
 # Input Data Panel
 
 We have used the `shinydashboard` package for the main structure and the `dashboardthemes` package for customization
 
-![](pix/example_data2.png)
+![](pix/upload_data2.png)
 ---
 
 # Visualization
@@ -183,12 +183,12 @@ All plots in the app are designed using `plotly` package. It make all plots inte
 
 .pull-left[
 
-![](pix/zoom_in.png)
+![](pix/boxplots.png)
 ]
 
 .pull-right[
 
-![](pix/splsda.png)
+![](pix/pca.png)
 
 ]
 
@@ -214,7 +214,7 @@ The implementation of `shinyhelper` package allows each panel to have an individ
 
 The aim is to offer to tune as many parameters as possible to avoid the "black box" effect
 
-![](pix/ttest.png)
+![](pix/univariate.png)
 
 ---
 
@@ -231,7 +231,7 @@ class: inverse, center, middle
 
   - We have developed a &lt;span style="color:#f38620"&gt;FAST&lt;/span&gt;, &lt;span style="color:#f38620"&gt;FRIENDLY&lt;/span&gt; and &lt;span style="color:#f38620"&gt;FREE&lt;/span&gt; software that is called POMA
   
-  - POMA is &lt;span style="color:#f38620"&gt;full-based in R&lt;/span&gt; language and uses a &lt;span style="color:#f38620"&gt;Shiny&lt;/span&gt; system to run
+  - POMA is &lt;span style="color:#f38620"&gt;full-based in R&lt;/span&gt; language and uses a &lt;span style="color:#f38620"&gt;Shiny&lt;/span&gt; framework to run
   
   - POMA provides an accurate &lt;span style="color:#f38620"&gt;DOCUMENTATION&lt;/span&gt; ("HELP") at each step of analysis that coluld improve the results and facilitate the interpretation of it
   
