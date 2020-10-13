@@ -171,6 +171,7 @@ class: inverse, center, middle
 <a href="https://github.com/pcastellanoescuder/POMAShiny"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMAShiny</a><br>
 
 ---
+exclude: true
 
 # Architecture
 
