@@ -63,9 +63,9 @@ _"Metabolomics is the identification and quantification of the small molecule me
 
 # Freely Available Existing Tools
 
-.pull-left[
+.center[
 
-```{r, warning = FALSE, comment = NA, message = FALSE, echo = FALSE, dpi = 200}
+```{r, warning = FALSE, comment = NA, message = FALSE, echo = FALSE, dpi = 70}
 library(ggplot2)
 tools <- readxl::read_excel("tools.xlsx")
 ggplot(tools, aes(class, ..count..)) +
@@ -82,21 +82,28 @@ ggplot(tools, aes(class, ..count..)) +
 
 ]
 
-.pull-right[
+.footnote[
 
-#### Web app tools that include statistical analysis options<sup>3</sup>
+[3] Spicer, R., Salek, R. M., Moreno, P., Cañueto, D., & Steinbeck, C. (2017). Navigating freely-available software tools for metabolomics analysis. Metabolomics, 13(9), 106.
+
+]
+
+---
+
+# Web App Tools
+
+### Web app tools that include statistical analysis options<sup>3</sup>
 
   - Workflow4Metabolomics 
   - Galaxy-M
   - XCMS 
   - MetaboAnalyst
 
-#### Drawbacks
+### Drawbacks
 
   - Few statistical methods available
   - Covariates
   - Interoperability and reproducibility
-]
 
 .footnote[
 
