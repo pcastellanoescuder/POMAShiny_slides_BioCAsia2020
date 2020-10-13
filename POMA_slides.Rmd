@@ -187,9 +187,16 @@ class: inverse, center, middle
 
 # Interactive Visualization
 
+.pull-left[
+
 ![](pix/boxplots.png)
+]
+
+.pull-right[
 
 ![](pix/pca.png)
+]
+
 ---
 
 # Help & Documentation
@@ -230,6 +237,19 @@ class: inverse, center, middle
 
 <a href="https://github.com/pcastellanoescuder/POMA"><i class="fab fa-github"></i>&nbsp; https://github.com/pcastellanoescuder/POMA</a><br>
 
+.pull-left[
+
+  .center[
+    <img src="pix/logo.png" width="250">
+  ]
+]
+
+.pull-right[
+
+  .center[
+    <img src="https://images.squarespace-cdn.com/content/v1/5423875be4b03f0c482a58c4/1532953317705-W6TYTE70KG5E6KQEZU1K/ke17ZwdGBToddI8pDm48kNVP8RwsgCc7XlHc2zPQeqdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxA5wn4368HhrDKfvXqORu9oTEmTJkjlQ2gdQcVngofpWQcE5w-MKnvigIPwIMqpXs/Bioconductor.png?format=750w" width="250">
+  ]
+]
 ---
 
 class: inverse, center, middle
@@ -241,19 +261,25 @@ class: inverse, center, middle
 
 # Conclusions
 
-<b>
+.font110[
+  - POMAShiny is a web-app tool powered by Shiny framework and POMA Bioconductor package
+  ]
+  
+.font110[
+  - POMAShiny provides several statistical methods for mass spectrometry statistical analysis in a comfortable, interactive and user-friendly environment 
+  ]
+  
+.font110[
+  - POMAShiny allows users to include different covariates in the analysis
+  ]
 
-  - We have developed a <span style="color:#f38620">FAST</span>, <span style="color:#f38620">FRIENDLY</span> and <span style="color:#f38620">FREE</span> software that is called POMA
+.font110[  
+  - The joint existence of both POMA package and POMAShiny web interface becomes a huge increase in the reproducibility and transparency of the analysis
+  ]
   
-  - POMA is <span style="color:#f38620">full-based in R</span> language and uses a <span style="color:#f38620">Shiny</span> framework to run
-  
-  - POMA provides an accurate <span style="color:#f38620">DOCUMENTATION</span> ("HELP") at each step of analysis that coluld improve the results and facilitate the interpretation of it
-  
-  - POMA can generate two types of <span style="color:#f38620">AUTOMATIC REPORTS</span>: Exploratory report and Statistical report
-  
-  - POMA is in a constant development. According to this, we are <span style="color:#f38620">totally open to user</span> bug reports to keep improving our app
-
-</b>
+.font110[
+  - POMAShiny and POMA are both open source projects and everybody is welcome to contribute!
+  ]
 
 ---
 
